@@ -1,0 +1,82 @@
+/* Root variables for easy theming and adjustments */
+:root {
+    --background-color: #f0f0f0; 
+    --screen-background-color: #000; 
+    --screen-text-color: #fff; 
+    --key-color: #333; 
+    --key-background-color: #fff; 
+    --key-shadow: 0 4px #888; 
+    --operator-color: #fff;
+    --operator-background-color: #fe9500; 
+    --equal-key-background-color: #ff3b30; 
+    --equal-key-color: #fff; 
+}
+
+/* General styling for the calculator container */
+.container {
+    background-color: var(--background-color);
+    border-radius: 20px;
+    width: 320px; 
+    padding: 20px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.1);
+    margin: auto; 
+    overflow: hidden; 
+}
+
+/* Styling for the screen of the calculator */
+.screen {
+    background-color: var(--screen-background-color);
+    color: var(--screen-text-color);
+    font-size: 32px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+/* Grid layout for the keys with some spacing */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1px; 
+}
+
+/* Default styling for all keys */
+.button {
+    background-color: var(--key-background-color);
+    color: var(--key-color);
+    font-size: 22px; 
+    border: none; 
+    padding: 20px 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none; 
+    cursor: pointer; 
+}
+
+/* Interaction states for keys */
+.button:active {
+    background-color: #ddd; 
+}
+
+/* Specific styling for operator keys */
+.operator {
+    background-color: var(--operator-background-color);
+    color: var(--operator-color);
+}
+
+/* Specific styling for the equal key */
+.equal-sign {
+    background-color: var(--equal-key-background-color);
+    color: var(--equal-key-color);
+    grid-column-start: 4;
+    grid-row-start: span 2; 
+}
+
+/* Specific styling for the 0 key to span two columns */
+.zero {
+    grid-column: span 2; 
+}
+

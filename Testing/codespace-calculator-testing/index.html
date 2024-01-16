@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>CodeSpace - Calculator</title>
+</head>
+<body>
+    <h1 style="text-align: center">CodeSpace Calculator</h1>
+    <div class="container">
+    <!-- Display -->
+    <table>
+        <tr>
+            <td colspan="3">
+                <input type='text' id='display' class='display' style="text-align: right;">
+            </td>
+            <td>
+                <input type='button' value = 'C' onclick="clearDisplay()" class="clear"/>
+            </td>
+        </tr>
+    </table>
+    <!-- Keys -->
+    <div class="keys">
+        <button class="number" id='7' onClick="appendToDisplay('7')">7</button>
+        <button class="number" id='8' onClick="appendToDisplay('8')">8</button>
+        <button class="number" id='9' onClick="appendToDisplay('9')">9</button>
+        <button class="operator" id='divide' onClick="appendToDisplay('/')">/</button>
+        <button class="number" id='4' onClick="appendToDisplay('4')">4</button>
+        <button class="number" id='5' onClick="appendToDisplay('5')">5</button>
+        <button class="number" id='6' onClick="appendToDisplay('6')">6</button>
+        <button class="operator" id='multiply' onClick="appendToDisplay('*')">*</button>
+        <button class="number" id='1' onClick="appendToDisplay('1')">1</button>
+        <button class="number" id='2' onClick="appendToDisplay('2')">2</button>
+        <button class="number" id='3' onClick="appendToDisplay('3')">3</button>
+        <button class="operator" id='subtract' onClick="appendToDisplay('-')">-</button>
+        <button class="number" id='0' onClick="appendToDisplay('0')">0</button>
+        <button class="operator" id="decimal" onClick="appendToDisplay('.')">.</button>
+        <button class="calculate" id='equals' onClick="calculate()">=</button>
+        <button class="operator" id='add' onClick="appendToDisplay('+')">+</button>
+    </div>
+    <!-- Calculation -->
+
+
+    </div>  
+
+<script src="calculator.js"></script>    
+</body>
+</html>
