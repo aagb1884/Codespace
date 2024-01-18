@@ -1,0 +1,19 @@
+product_id,product_price,,,
+1,10.99,,product_price,
+2,15.99,,,
+3,8.99,,Mean,19.32
+4,12.99,,Standard Error,7.47
+5,19.99,,Median,12.49
+6,7.99,,Mode,99.99
+7,14.99,,Standard Deviation,25.87
+8,9.99,,Sample Variance,669.48
+9,11.99,,Kurtosis,10.91
+10,16.99,,Skewness,3.24
+11,99.99,,Range,98.99
+12,1.00,,Minimum,1.00
+TOTAL,231.89,,Maximum,99.99
+AVERAGE,19.32,,Sum,231.89
+MAX,99.99,,Count,12.00
+MIN,1,,Largest(1),99.99
+,,,Smallest(1),1.00
+,,,Confidence Level(95%),16.44
